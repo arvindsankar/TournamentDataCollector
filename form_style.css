@@ -1,5 +1,5 @@
 *{
-	font-family: "Arial", Times, serif;
+	    font-family: "Arial", Times, serif;
 }
 
 body{
@@ -10,14 +10,18 @@ body{
 
 
 input[type="text"]{
-	border: 1px dotted #999;
+	border: 1px;
   	border-radius: 5px;
     -webkit-appearance: none;
 
 }
+br{
+	padding-bottom: 20px;
+	line-height: 200px;
+}
 
 form{
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	line-height: 200px;
 }
 
