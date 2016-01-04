@@ -1,74 +1,26 @@
-<!DOCTYPE html>
 <html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Form_Style.css">
+</head>
+
+<h1>Create A Debater</h1>
+ 
 <body>
 
-<form id="full_name">
-Full Name: <input name="name" type="text" size="20">
+<form action ="Translator.php" method="POST">
+Full Name: <br><input type="text" name="input1"><br>
+Email: <br><input type="text" name="input2"><br>
+Phone: <br><input type="text" name="input3"><br>
+Number of Tournaments Attended: <br><input type="text" name="input4"><br>
+Number of Tournaments Judged: <br><input type="text" name="input5"><br>
+Number of Wins: <br><input type="text" name="input6"><br>
+Number of Losses: <br><input type="text" name="input7"><br>
+Parent Name: <br><input type="text" name="input8"><br>
+Parent Email: <br><input type="text" name="input9"><br><br>
+<input type ="submit" value="Submit"/>
 </form>
 
-<form id="email_address">
-Email: <input name="email" type="text" size="20">
-</form>
 
-<form id="phone_number">
-Phone: <input name="number" type="text" size="20">
-</form>
-
-<form id="tours_attended">
-Number of Tournaments Attended: <input name="attended" type="text" size="20">
-</form>
-
-<form id="tours_judged">
-Number of Tournaments Judged: <input name="judged" type="text" size="20">
-</form>
-
-<form id="total_wins">
-Number of Wins: <input name="wins" type="text" size="20">
-</form>
-
-<form id="total_losses">
-Number of Losses: <input name="losses" type="text" size="20">
-</form>
-
-<form id="parent_name">
-Parent Name: <input name="pname" type="text" size="20">
-</form>
-
-<form id="parent_email">
-Parent Email: <input name="pemail" type="text" size="20">
-</form>
-
-<button onclick="outputname()">Submit</button>
-<script>
-
-function outputname() {
-
-var name,email,phone_num,attended,judged,wins,losses,pname,p_email;
-
-name = document.getElementById("full_name").elements["name"].value;
-email = document.getElementById("email_address").elements["email"].value;
-phone_num = document.getElementById("phone_number").elements["number"].value;
-attended = document.getElementById("tours_attended").elements["attended"].value;
-judged = document.getElementById("tours_judged").elements["judged"].value;
-wins = document.getElementById("total_wins").elements["wins"].value;
-losses = document.getElementById("total_losses").elements["losses"].value;
-pname = document.getElementById("parent_name").elements["pname"].value;
-p_email = document.getElementById("parent_email").elements["pemail"].value;
-
-document.getElementById("demo").innerHTML =  "Name: "  + name  + "<br>";
-document.getElementById("demo").innerHTML += "Email: " + email + " <br>";
-document.getElementById("demo").innerHTML += "Phone Number: " + phone_num + " <br>";
-document.getElementById("demo").innerHTML += "Tournaments Attended: " + attended + " <br>";
-document.getElementById("demo").innerHTML += "Tournaments Judged: " + judged + " <br>";
-document.getElementById("demo").innerHTML += "Number of Wins: " + wins + " <br>";
-document.getElementById("demo").innerHTML += "Number of Losses: " + losses + " <br>";
-document.getElementById("demo").innerHTML += "Parent Name: " + pname + " <br>";
-document.getElementById("demo").innerHTML += "Parent Email: " + p_email + " <br>";
-}
-
-</script>
-
-
-<p id="demo"></p>
 </body>
 </html>
+
