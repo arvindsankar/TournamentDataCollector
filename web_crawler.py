@@ -10,13 +10,7 @@ def page_crawler():
     # add all numbers to list:
     for link in soup.findAll({'td':'smallish centeralign'}):
     	string = link.string
-        if string:
-        	for i in range(len(string) + 1):
-        		c = string[i-1:i]
-        		try:
-        			title.append(int(c))
-        		except ValueError:
-        			pass
+    	title.append(string)
     print(title) #testing
     fx = open("debate.txt", "w")
     fx.write(str(title))
