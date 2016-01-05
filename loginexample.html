@@ -1,44 +1,108 @@
 <html>
 <head>
+<title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <style>
 
 body {
-    background-color: blue;
+    background-color: white;
 }
 h1 {
-    color: yellow;
+    color: black;
+	font-size: 400%;
+
     margin-left: 40px;
-} 
+}
+h2 {
+    color: white;
+	 font-size: 400%;
+	font-weight: 900;
+    margin-left: 40px;
+}
+p {
+    color: white;
+	 font-size: 300%;
+	font-weight: 600;
+    margin-left: 60px;
+
+}
+.jumbotron {
+  background-image:url("final2.JPG");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  position: relative;
+  top:10px;
+
+
+}
 </style>
 
 <h1>
-Login page
+Debate Manager
 </h1>
 
 </head>
 <body>
+<div class = "container"><!-- div2 for contents in nav bar -->
+			<ul class = "nav nav-tabs">
 
-<form name="login">
-Username: <input type="text" name="userid"/>
-Password: <input type="password" name="pswrd"/>
-<input type="button" onclick="check(this.form)" value="Login"/>
-<input type="reset" value="Cancel"/>
-</form>
-<img src="Gulshan.jpg" alt="Crasslies" style="width:500px;height:500px;">
-<script language="javascript">
-function check(form)/*function to check userid & password*/
-{
- /*the following code checkes whether the entered userid and password are matching*/
- if(form.userid.value == "a" && form.pswrd.value == "abc")
-  {
-    /*window.open('website.html')/*opens the target page while Id & password matches*/
-	window.location = ('website.html')
-  }
- else
- {
-   alert("ARVIND IS THE CRASSEST FELLA ALIVE")/*displays error message*/
-  }
-}
-</script>
+				<li class = "active"><a data-toggle="tab" href="#home">Home</a></li>
+				<li><a data-toggle="tab" href="#about">About Us</a></li>
+
+			</ul>
+
+		<div class="tab-content">
+
+			<div id="home" class="tab-pane fade in active">
+
+				<div class = "jumbotron">
+				<div class = "container">
+					<h2>ORGANIZE YOUR DEBATE DATA</h2>
+					<p>Add a debater and keep track of their entire history and record - all in one place!</p>
+				</div>
+				</div>
+
+				<form name="login">
+				Username: <input type="text" name="userid"/>
+				Password: <input type="password" name="pswrd"/>
+			<input type="button" onclick="check(this.form)" value="Login"/>
+			<input type="reset" value="Cancel"/>
+			</form>
+
+
+
+			<script language="javascript">
+				function check(form)/*function to check userid & password*/
+				{
+						/*the following code checkes whether the entered userid and password are matching*/
+					if(form.userid.value == "a" && form.pswrd.value == "abc")
+					{
+						/*window.open('website.html')/*opens the target page while Id & password matches*/
+						window.location = ('website.html')
+					}
+					else
+					{
+						alert("ARVIND IS THE CRASSEST FELLA ALIVE")/*displays error message*/
+					}
+				}
+			</script>
+			</div>
+
+			<div id="about" class="tab-pane fade">
+				<h3>About Us</h3>
+				<p></p>
+				<img src="Gulshan.jpg" alt="Crasslies" style="width:500px;height:500px;">
+			</div>
+
+		</div>
+</div>
+
 </body>
 </html>
