@@ -1,44 +1,60 @@
 <html>
+
 <head>
-<style>
-
-body {
-    background-color: blue;
-}
-h1 {
-    color: yellow;
-    margin-left: 40px;
-} 
-</style>
-
-<h1>
-Login page
-</h1>
-
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
-<body>
 
-<form name="login">
-Username: <input type="text" name="userid"/>
-Password: <input type="password" name="pswrd"/>
-<input type="button" onclick="check(this.form)" value="Login"/>
-<input type="reset" value="Cancel"/>
-</form>
-<img src="Gulshan.jpg" alt="Crasslies" style="width:500px;height:500px;">
-<script language="javascript">
-function check(form)/*function to check userid & password*/
-{
- /*the following code checkes whether the entered userid and password are matching*/
- if(form.userid.value == "a" && form.pswrd.value == "abc")
-  {
-    /*window.open('website.html')/*opens the target page while Id & password matches*/
-	window.location = ('website.html')
-  }
- else
- {
-   alert("ARVIND IS THE CRASSEST FELLA ALIVE")/*displays error message*/
-  }
-}
-</script>
+<body>
+<!-- <div> <!-- div1 for navigation bar -->
+	<div class = "container"><!-- div2 for contents in nav bar -->
+			<ul class = "nav nav-tabs">
+	
+				<li class = "active"><a data-toggle="tab" href="#home">Home</a></li>
+				<li><a data-toggle="tab" href="#about">About</a></li>
+				<!--<a href = about.html>-->
+				<li><a data-toggle="tab" href="#JudgeRatioCalculator">Judge Ratio Calculator</a></li>
+				<li><a data-toggle="tab" href="#JudgePortfolio">Judge Portfolio</a></li>
+				<li><a data-toggle="tab" href="#StudentTeamRecords">Student Team Records</a></li>
+				<li><input type="button" onclick= "window.open('form.php')" value="Form"/><li>
+				<li><input type="button" onclick="window.location = 'loginexample.html'" value="Logout"/></li>
+			</ul>
+		
+		
+		<div class="tab-content">
+		
+			<div id="home" class="tab-pane fade in active">
+				<h3>HOME</h3>
+				<p>Content for home page</p>
+			</div>
+		
+			<div id="about" class="tab-pane fade">
+				<h3>About</h3>
+				<p>About this swaggy app</p>
+			</div>
+	
+			<div id="JudgeRatioCalculator" class="tab-pane fade">
+				<h3>Judge Ratio Calculator</h3>
+				<p>Content for calculating those judge ratios thooo</p>
+			</div>
+	
+			<div id="JudgePortfolio" class="tab-pane fade">
+				<h3>Judge Portfolio</h3>
+				<p>Content for judge portfolios</p>
+			</div>
+	
+			<div id="StudentTeamRecords" class="tab-pane fade">
+				<h3>Student Team Records</h3>
+				<p>Content for student team records</p>
+			</div>	
+			
+		</div>
+	</div>
 </body>
+
+
 </html>
