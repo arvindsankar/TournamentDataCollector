@@ -8,7 +8,7 @@ h1{
 
 
 body{
-	background-color: brown;
+	background-color: #E0FFFF;
 	font-family: "Times New Roman", Georgia, serif;
 	font-size: 100%;
 	color:black;
@@ -17,13 +17,13 @@ body{
 
 
 br{
-	padding-bottom: 30px;
-	line-height: 30px;
+	padding-bottom: 45px;
+	line-height: 45px;
 
 }
 
 form{
-	padding-bottom: 30px;
-	line-height: 30px;
+	padding-bottom: 45px;
+	line-height: 45px;
 
 }
