@@ -14,21 +14,21 @@ body {
 h1 {
     color: black;
 	font-size: 500%;
-	
+
     margin-left: 40px;
-} 
+}
 h2 {
     color: white;
 	 font-size: 400%;
 	font-weight: 900;
     margin-left: 40px;
-} 
+}
 p {
     color: white;
 	 font-size: 300%;
 	font-weight: 600;
     margin-left: 60px;
-	
+
 }
 .jumbotron {
   background-image:url("final2.JPG");
@@ -39,8 +39,8 @@ p {
 .container {
   position: relative;
   top:10px;
-  
-  
+
+
 }
 </style>
 
@@ -52,32 +52,32 @@ Debate Manager
 <body>
 <div class = "container"><!-- div2 for contents in nav bar -->
 			<ul class = "nav nav-tabs">
-	
+
 				<li class = "active"><a data-toggle="tab" href="#home">Home</a></li>
 				<li><a data-toggle="tab" href="#about">About Us</a></li>
-				
+
 			</ul>
-			
+
 		<div class="tab-content">
-		
+
 			<div id="home" class="tab-pane fade in active">
-				
+
 				<div class = "jumbotron">
 				<div class = "container">
 					<h2>ORGANIZE YOUR DEBATE DATA</h2>
 					<p>Add a debater and keep track of their stats - all in one place!</p>
 				</div>
 				</div>
-				
+
 				<form name="login">
 				Username: <input type="text" name="userid"/>
 				Password: <input type="password" name="pswrd"/>
 			<input type="button" onclick="check(this.form)" value="Login"/>
 			<input type="reset" value="Cancel"/>
 			</form>
-			
-				
-	
+
+
+
 			<script language="javascript">
 				function check(form)/*function to check userid & password*/
 				{
@@ -94,13 +94,13 @@ Debate Manager
 				}
 			</script>
 			</div>
-		
+
 			<div id="about" class="tab-pane fade">
 				<h3>About Us</h3>
 				<p>About this swaggy app</p>
 				<img src="Gulshan.jpg" alt="Crasslies" style="width:500px;height:500px;">
 			</div>
-			
+
 		</div>
 </div>
 
