@@ -27,7 +27,7 @@ if($sql){
 if (!mysql_query($sql)) {
 	die('Error');
 }
-
+header("Location: tournament_reg_form.html");
 mysql_close();
 
 ?>
