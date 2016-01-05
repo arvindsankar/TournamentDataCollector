@@ -1,52 +1,29 @@
-*{
-	    font-family: "Arial", Times, serif;
-			font-size: 100 px;
-}
 
-body{
-	background-color: red;
-	color:white;
+h1{
+	font-family: "Times New Roman", Georgia, serif;
+	font-size: 200%;
+	color: black;
 	text-align: center;
 }
 
 
-input[type="text"]{
-	border: 1px;
-  	border-radius: 5px;
-    -webkit-appearance: none;
-
+body{
+	background-color: brown;
+	font-family: "Times New Roman", Georgia, serif;
+	font-size: 100%;
+	color:black;
+	text-align: center;
 }
+
+
 br{
-	padding-bottom: 20px;
-	line-height: 200px;
+	padding-bottom: 30px;
+	line-height: 30px;
+
 }
 
 form{
-	padding-bottom: 20px;
-	line-height: 200px;
-}
+	padding-bottom: 30px;
+	line-height: 30px;
 
-form:hover{
-	background-image:none;
-	border-color:#00BFFF;
-}
-
-
-button{
-	background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f6f8+0,d8e1e7+50,b5c6d0+51,e0eff9+100;Grey+Gloss+%232 */
-	background: #f2f6f8; /* Old browsers */
-	background: -moz-linear-gradient(top,  #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=0 ); /* IE6-9 */
-	color:black;
-	border-radius:10px;
-	width:60px;
-	height: 30px;
-}
-
-button:hover{
-	background-image:none;
-	background-color: white;
-	border-color:#00BFFF;
 }
