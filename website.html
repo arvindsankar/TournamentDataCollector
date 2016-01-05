@@ -16,10 +16,13 @@
 
 				<li class = "active"><a data-toggle="tab" href="#home">Home</a></li>
 				<li><a data-toggle="tab" href="#about">About</a></li>
+
+
 				<!--<a href = about.html>-->
 				<li><a data-toggle="tab" href="#JudgeRatioCalculator">Judge Ratio Calculator</a></li>
 				<li><a data-toggle="tab" href="#JudgePortfolio">Judge Portfolio</a></li>
 				<li><a data-toggle="tab" href="#StudentTeamRecords">Student Team Records</a></li>
+        <li><a data-toggle="tab" href="#signup">Student Team Records</a></li>
 				<li><input type="button" onclick= "window.open('form.html')" value="Form"/><li>
 				<li><input type="button" onclick="window.location = 'loginexample.html'" value="Logout"/></li>
 			</ul>
@@ -27,10 +30,19 @@
 
 		<div class="tab-content">
 
+
+			<div id="JudgeRatioCalculator" class="tab-pane fade in active">
+
+
 			<div id="home" class="tab-pane fade in active">
 				<h3>HOME</h3>
 				<p>Content for home page</p>
 			</div>
+
+      <div id="signup" class="tab-pane fade">
+        <h3>Sign Up!</h3>
+        <p>Content for home page</p>
+      </div>
 
 			<div id="about" class="tab-pane fade">
 				<h3>About</h3>
@@ -38,6 +50,11 @@
 			</div>
 
 			<div id="JudgeRatioCalculator" class="tab-pane fade">
+<<<<<<< Updated upstream
+>>>>>>> origin/master
+>>>>>>> origin/master
+=======
+>>>>>>> Stashed changes
 				<h3>Judge Ratio Calculator</h3>
 				<p>Content for calculating those judge ratios thooo</p>
 			</div>
@@ -50,8 +67,32 @@
 			<div id="StudentTeamRecords" class="tab-pane fade">
 				<h3>Student Team Records</h3>
 				<p>Content for student team records</p>
+
+				<div id="leftSide" style="width:50%;float:left; height: 500px;">
+					<body>
+						<h1>Enter new debator: </h1>
+							<form action ="translator.php" method="POST">
+								Full Name: <br><input type="text" name="name"><br>
+								Email: <br><input type="text" name="email"><br>
+								Phone: <br><input type="text" name="phone"><br>
+								Number of Tournaments Attended: <br><input type="text" name="attend"><br>
+								Number of Tournaments Judged: <br><input type="text" name="judged"><br>
+								Number of Wins: <br><input type="text" name="wins"><br>
+								Number of Losses: <br><input type="text" name="loss"><br>
+								Parent Name: <br><input type="text" name="parent_name"><br>
+								Parent Email: <br><input type="text" name="parent_email"><br><br>
+							<input type ="submit" value="Submit"/>
+						</form>
+					</body>
+				</div>
+				<div id="rightSide" style="margin-left:50%;border-left:solid 1px black;height: 500px;""></div>
 			</div>
 
+=======
+			</div>
+
+
+>>>>>>> origin/master
 		</div>
 	</div>
 </body>
