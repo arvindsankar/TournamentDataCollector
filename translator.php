@@ -2,7 +2,7 @@
 define('DB_NAME', 'forms1');
 define('DB_USER', 'root');
 define('DB_PASSWORD', 'Amit12');
-define('DB_HOST', 'localhost');
+define('DB_HOST', '192.168.1.171');
 
 $link = mysql_connect(DB_HOST,DB_USER,DB_PASSWORD);
 
