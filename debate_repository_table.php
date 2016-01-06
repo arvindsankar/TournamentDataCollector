@@ -20,14 +20,10 @@ $records = mysql_query($sql);
 <tr>
 
 <th>Name</th>
-<th>Email</th>
-<th>Phone Number</th>
-<th>Number of Tournaments Attended</th>
-<th>Number of Tournaments Judged</th>
-<th>Number of Wins</th>
-<th>Number of Losses</th>
-<th>Parent Name</th>
-<th>Parent Phone Number</th>
+<th>Attended</th>
+<th>Judged</th>
+<th>Wins</th>
+<th>Losses</th>
 
 <tr>
 
@@ -35,15 +31,11 @@ $records = mysql_query($sql);
 
     while($student=mysql_fetch_assoc($records)) {
         echo "<tr>";
-        echo "<td>".$student['input1']."</td>";
-        echo "<td>".$student['input2']."</td>";
-        echo "<td>".$student['input3']."</td>";
-        echo "<td>".$student['input4']."</td>";
-        echo "<td>".$student['input5']."</td>";
-        echo "<td>".$student['input6']."</td>";
-        echo "<td>".$student['input7']."</td>";
-        echo "<td>".$student['input8']."</td>";
-        echo "<td>".$student['input9']."</td>";
+        echo "<td>".$student['name']."</td>";
+        echo "<td>".$student['attend']."</td>";
+        echo "<td>".$student['judged']."</td>";
+        echo "<td>".$student['wins']."</td>";
+        echo "<td>".$student['loss']."</td>";
         echo "</tr>";        
     }//end while
 
