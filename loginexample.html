@@ -6,106 +6,94 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+  	$(function(){
+		  $("#sign_up").load("sign_up.html"); 
+		  $("#tester").load("tester.html");
+		});
+  </script>
 <style>
 
-body {
-    background-color: white;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+	body {
+	    background-color: white;
+	}
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	}
 
-li {
-    display: inline;
-}
-login{
-	display: table-cell;
-    padding-right: 10px;
-    white-space: nowrap;
-}
-h1 {
-    color: black;
-	font-size: 500%;
+	li {
+	    display: inline;
+	}
 
-    margin-left: 40px;
-}
-h2 {
-    color: white;
-	font-size: 400%;
-	font-weight: 900;
-    margin-left: 40px;
-}
-p {
-    color: black;
-	 font-size: 300%;
-	font-weight: 600;
-    margin-left: 60px;
+	h1 {
+	    color: black;
+		font-size: 500%;
 
-}
-.jumbotron {
-  background-image:url("final2.JPG");
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container {
-  position: relative;
-  top:10px;
-width: 100%;
+	    margin-left: 40px;
+	}
+	h2 {
+	    color: white;
+		font-size: 400%;
+		font-weight: 900;
+	    margin-left: 40px;
+	}
 
-}
-</style>
-<head>
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 
-li {
-    display: inline;
-}
+	h3{
+		color: black;
+		font-size:300%;
+	}
+
+
+	p {
+	    color: black;
+		 font-size: 300%;
+		font-weight: 600;
+	    margin-left: 60px;
+
+	}
+	.jumbotron {
+	  background-image:url("final2.JPG");
+	  height: 500px;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
+	.container{
+	  position: relative;
+	  top:10px;
+	width: 100%;
+
+	}
+	.home{
+		height: 500px;
+	}
+
+
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	}
+
+
+
+	form{
+		background-color: #D3D3D3;
+		width:500px;
+		height:500px;
+		position: fixed;
+		left:35%;
+		margin-top: 5%;
+		border-radius: 10px;
+	}
 </style>
 </head>
 <body>
 
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><form name="login">
-Username<input type="text" name="userid"/>
-Password<input type="password" name="pswrd"/>
-<input type="button" onclick="check(this.form)" value="Login"/>
-<input type="reset" value="Cancel"/>
-</form></li>
-</ul>
 
-</body>
-
-</head>
-<body>
-<div class = "container"><!-- div2 for contents in nav bar -->
-			<ul class = "nav nav-tabs">
-
-				<li class = "active"><a data-toggle="tab" href="#home">Home</a></li>
-				<li><a data-toggle="tab" href="#about">About Us</a></li>
-        <li><a data-toggle="tab" href="#signup">Sign Up!</a></li>
-			</ul>
-
-		<div class="tab-content">
-
-			<div id="home" class="tab-pane fade in active">
-
-				<div class = "jumbotron">
-				<div class = "container">
-					<h2>ORGANIZE YOUR DEBATE DATA</h2>
-					<p style="color:white;">Add a debater and keep track of their stats - all in one place!</p>
-				</div>
-				</div>
-
-			<script language="javascript">
+<script language="javascript">
 				function check(form)/*function to check userid & password*/
 				{
 						/*the following code checkes whether the entered userid and password are matching*/
@@ -120,18 +108,53 @@ Password<input type="password" name="pswrd"/>
 					}
 				}
 			</script>
+</body>
+
+</head>
+<body>
+<div class = "container"><!-- div2 for contents in nav bar -->
+			<ul class = "nav nav-tabs">
+
+				<li class = "active"><a data-toggle="tab" href="#home">Home</a></li>
+				<li><a data-toggle="tab" href="#about">About Us</a></li>
+        		<li><a data-toggle="tab" href="#signup">Sign Up!</a></li>
+        		<li><a data-toggle="tab" href="#login">Log In!</a></li>
+
+			</ul>
+
+		<div class="tab-content">
+
+			<div id="home" class="tab-pane fade in active">
+				<div id = "tester"></div>
 			</div>
 
 			<div id="about" class="tab-pane fade">
 				<h3>About Us</h3>
 				<p>Welcome to the Debate Manager website! </p>
-				<img src="Gulshan.jpg" alt="Crasslies" style="width:500px;height:500px;">
+				<img src="Gulsham.jpg" alt="Crasslies" style="width:300px;height:300px;">
+			</div>
+				 <div id="signup" class="tab-pane fade">
+      			 <h3>Sign Up Today!</h3>
+      			<div id="sign_up"></div>
+	  		</div>
+
+	  		<div id="login" class="tab-pane fade in active">
+				<h3> Sign In </h3>
+				<ul>
+				 <br><li><form name="login">
+				Username: <input type="text" name="userid" style="margin-top:30%;"/><br>
+				<br>Password: <input type="password" name="pswrd"/></br>
+				<br><input type="button" onclick="check(this.form)" value="Login"/></br>
+				<br><input type="reset" value="Cancel"/></br>
+				</form></li>
+				</ul>
 			</div>
 
-      <div id="signup" class="tab-pane fade">
-				<h3>Sign Up!</h3>
-				<p>PLEASE SIGN UP</p>
-			</div>
+		</div>
+
+			
+
+     
 
 		</div>
 </div>

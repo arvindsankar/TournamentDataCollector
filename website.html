@@ -7,89 +7,16 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <style>
-  body{
-   
-  }
-  </style>
+  <script> 
+		$(function(){
+		  $("#header").load("header.html"); 
+		  $("#footer").load("footer.html"); 
+		});
+		</script> 
 </head>
 
 <body>
-					<!--Student Team Records registration form-->
-		<nav class = "navbar navbar-inverse navbar-static-top"> <!-- div1 for navigation bar -->
-	<div class = "container"><!-- div2 for contents in nav bar -->
-			<ul class = "nav navbar-nav">
-				<!--<a href = about.html>-->
-				<li><a href="Judge_Ratio_Calculator.html" >Judge Ratio Calculator</a></li>
-				<li><a href="Judge_Portfolio.html">Judge Portfolio</a></li>
-				<li><a href="Student_Team_Records.html">Student Team Records</a></li>
-				<li><a href="Admin_Tournament_Form.html">Admin Tournament Form</a></li>
-				<li><a href="Student_Tournament_Form.html">Student Tournament Form</a></li>
-				<li><a href="Universal_Debate_Read_Table.html">Universal Debate Read Table</a></li>
-				<li><input type="button" onclick="window.location = 'loginexample.html'" value="Logout"/></li>
-			</ul>
-		</nav>
-		<div class="tab-content">
-
-			<div id="JudgeRatioCalculator" class="tab-pane fade in active">
-				<h3>Judge Ratio Calculator</h3>
-				<p>Content for calculating those judge ratios thooo</p>
-			</div>
-
-			<div id="JudgePortfolio">
-			
-				<h3>Judge Portfolio</h3>
-				<p>Content for judge portfolios</p>
-				
-			</div>
-			<!--Student Team Records registration form-->
-			<div id="StudentTeamRecords" class="tab-pane fade">
-				<h3>Student Team Records</h3>
-				<p>Content for student team records</p>
-				<div id="leftSide" style="width:50%;float:left; height: 500px;">
-					<body>
-						<h1>Enter new debator: </h1>
-							<form action ="translator.php" method="POST">
-								Full Name: <br><input type="text" name="name"><br>
-								Email: <br><input type="text" name="email"><br>
-								Phone: <br><input type="text" name="phone"><br>
-								Number of Tournaments Attended: <br><input type="text" name="attend"><br>
-								Number of Tournaments Judged: <br><input type="text" name="judged"><br>
-								Number of Wins: <br><input type="text" name="wins"><br>
-								Number of Losses: <br><input type="text" name="loss"><br>
-								Parent Name: <br><input type="text" name="parent_name"><br>
-								Parent Email: <br><input type="text" name="parent_email"><br><br>
-							<input type ="submit" value="Submit"/>
-						</form>
-					</body>
-				</div>
-			
-				<div id="rightSide" style="margin-left:50%;border-left:solid 1px black;height:100%; width:100%">
-					        <iframe id="right" frameborder="0" height = "100%" scrolling="no" width = "100%" style="border: 1;" src="debate_repository_table.php">
-
-					        </iframe>
-
-				</div>
-			</div>
-			
-				<div id="AdminTournamentForm" class="tab-pane fade">
-					<h3>Admin Tournament Form</h3>
-					<p>Admin Tournament Form</p>
-				</div>
-
-				<div id="StudentTournamentForm" class="tab-pane fade">
-					<h3>Student Tournament Form</h3>
-					<p>Student Tournament Form</p>
-				</div>
-
-				<div id="UniversalDebateReadTable" class="tab-pane fade">
-					<h3>Universal Debate Read Table</h3>
-					<p>Universal Debate Read Table</p>
-				</div>
-		</div>
-	</div>
-
+		<div id='header'></div>
+		<h1 style="text-align:center;">Welcome!</h1>		
 </body>
-
-
 </html>

@@ -1,6 +1,18 @@
 <html>
+	<head>
+		<style>
+			*{
+				text-align: center;
+				margin-top: 20px;
+			}
+			.button{
+				padding: 20px;
+			}
+
+		</style>
+
+	</head>
 	<body>
-		<h1>Register Admin</h1>
 			<form action ="users.php" method="POST">
 				Debate Coach: <br><input type="text" name="coach"><br>
 				School: <br><input type="text" name="school"><br>
@@ -8,7 +20,9 @@
 				Username: <br><input type="text" name="username"><br>
 				Password: <br><input type="text" name="password"><br>
 				Confirm Password: <br><input type="text" name="confirm"><br>
+			<div id = button>
 			<input type ="submit" value="Submit"/>
+			</div>
 		</form>
 	</body>
 </html>

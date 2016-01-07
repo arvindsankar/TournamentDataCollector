@@ -1,3 +1,4 @@
+
    <?php
    	define('DB_NAME', 'forms1');
 	define('DB_USER', 'root');
@@ -25,20 +26,22 @@
     $result = mysqli_query($con,"SELECT username,email FROM users");
 
     if($confirm != $password){
-    	die("Fuck no!");
+       echo '<script type="text/javascript">alert("your passwords dont match up");</script>';
+
     }
     while($row = mysqli_fetch_array($result))
       {
      	 if ($row['username'] == $username or $row['email'] == $email) {
-     	 	die('Fuck No!');
+          echo '<script type="text/javascript">alert("pick another username someone else has this one.");</script>';
+          break;
      	 }
       }
 	
-	#header("Location: website.html");
+  header("Location: loginexample.html");
 	$sql = "INSERT INTO users (coach, school, email, username, password, confirm) VALUES ('$coach', '$school', '$email','$username','$password','$confirm')";
 	if(!mysql_query($sql)){
 		die('error!');
 	}    
 
     mysqli_close($con);
-    ?>
+?>

@@ -11,6 +11,7 @@ $records = mysql_query($sql);
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="table_style.css">
+<script>src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <title>Tournament Data</title>
 </head>
 
