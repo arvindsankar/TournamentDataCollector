@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+  body{
+   
+  }
+  </style>
 </head>
 
 <body>
@@ -14,12 +19,12 @@
 	<div class = "container"><!-- div2 for contents in nav bar -->
 			<ul class = "nav navbar-nav">
 				<!--<a href = about.html>-->
-				<li><a data-toggle="tab" href="#JudgeRatioCalculator">Judge Ratio Calculator</a></li>
-				<li><a data-toggle="tab" href="#JudgePortfolio">Judge Portfolio</a></li>
-				<li><a data-toggle="tab" href="#StudentTeamRecords">Student Team Records</a></li>
-				<li><a data-toggle="tab" href="#AdminTournamentForm">Admin Tournament Form</a></li>
-				<li><a data-toggle="tab" href="#StudentTournamentForm">Student Tournament Form</a></li>
-				<li><a data-toggle="tab" href="#StudentTournamentForm">Universal Debate Read Table</a></li>
+				<li><a data-toggle = "tab" href="#JudgeRatioCalculator" >Judge Ratio Calculator</a></li>
+				<li><a href="judgeportfolio.html">Judge Portfolio</a></li>
+				<li><a href="#StudentTeamRecords">Student Team Records</a></li>
+				<li><a href="#AdminTournamentForm">Admin Tournament Form</a></li>
+				<li><a href="#StudentTournamentForm">Student Tournament Form</a></li>
+				<li><a href="#UniversalDebateReadTable">Universal Debate Read Table</a></li>
 				<li><input type="button" onclick="window.location = 'loginexample.html'" value="Logout"/></li>
 			</ul>
 		</nav>
@@ -30,9 +35,11 @@
 				<p>Content for calculating those judge ratios thooo</p>
 			</div>
 
-			<div id="JudgePortfolio" class="tab-pane fade">
+			<div id="JudgePortfolio">
+			
 				<h3>Judge Portfolio</h3>
 				<p>Content for judge portfolios</p>
+				
 			</div>
 
 			<div id="StudentTeamRecords" class="tab-pane fade">
@@ -55,12 +62,7 @@
 						</form>
 					</body>
 				</div>
-
-				<div id="rightSide" style="margin-left:50%;border-left:solid 1px black;height: 500px;">
-
-				</div>
 			
-
 				<div id="rightSide" style="margin-left:50%;border-left:solid 1px black;height:100%; width:100%">
 					        <iframe id="right" frameborder="0" height = "100%" scrolling="no" width = "100%" style="border: 1;" src="debate_repository_table.php">
 

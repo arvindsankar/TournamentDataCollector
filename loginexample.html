@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Bootstrap Case</title>
+<title>Debate Manager</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -10,6 +10,20 @@
 
 body {
     background-color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+login{
+	display: table-cell;
+    padding-right: 10px;
+    white-space: nowrap;
 }
 h1 {
     color: black;
@@ -43,10 +57,32 @@ width: 100%;
 
 }
 </style>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-<h1>
-Debate Manager
-</h1>
+li {
+    display: inline;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><form name="login">
+Username<input type="text" name="userid"/>
+Password<input type="password" name="pswrd"/>
+<input type="button" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form></li>
+</ul>
+
+</body>
 
 </head>
 <body>
@@ -56,7 +92,6 @@ Debate Manager
 				<li class = "active"><a data-toggle="tab" href="#home">Home</a></li>
 				<li><a data-toggle="tab" href="#about">About Us</a></li>
         <li><a data-toggle="tab" href="#signup">Sign Up!</a></li>
-
 			</ul>
 
 		<div class="tab-content">
@@ -70,15 +105,6 @@ Debate Manager
 				</div>
 				</div>
 
-				<form name="login">
-				Username: <input type="text" name="userid"/>
-				Password: <input type="password" name="pswrd"/>
-			<input type="button" onclick="check(this.form)" value="Login"/>
-			<input type="reset" value="Cancel"/>
-			</form>
-
-
-
 			<script language="javascript">
 				function check(form)/*function to check userid & password*/
 				{
@@ -90,7 +116,7 @@ Debate Manager
 					}
 					else
 					{
-						alert("ARVIND IS THE CRASSEST FELLA ALIVE")/*displays error message*/
+						alert("Wrong Password!")/*displays error message*/
 					}
 				}
 			</script>
