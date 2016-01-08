@@ -27,17 +27,17 @@
 
     if($confirm != $password){
        echo '<script type="text/javascript">alert("your passwords dont match up");</script>';
-
     }
+
     while($row = mysqli_fetch_array($result))
       {
      	 if ($row['username'] == $username or $row['email'] == $email) {
           echo '<script type="text/javascript">alert("pick another username someone else has this one.");</script>';
           break;
      	 }
-      }
-	
-  header("Location: loginexample.html");
+      }	
+
+  echo '<script type ="text/javascript">window.location = ("loginexample.html");</script>';
 	$sql = "INSERT INTO users (coach, school, email, username, password, confirm) VALUES ('$coach', '$school', '$email','$username','$password','$confirm')";
 	if(!mysql_query($sql)){
 		die('error!');
