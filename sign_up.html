@@ -10,7 +10,8 @@
 				padding: 20px;
 			}
 			body {
-				height: 200px;
+				height: 500px;
+				height: 600px;
 				background: linear-gradient(-90deg, #34282C, silver); /* Standard syntax (must be last) */
 			}
 
@@ -20,12 +21,19 @@
 	</head>
 	<body>
 			<form action ="users.php" method="POST">
-				Debate Coach: <br><input type="text" name="coach"><br>
-				School: <br><input type="text" name="school"><br>
-				Email: <br><input type="text" name="email"><br>
-				Username: <br><input type="text" name="username"><br>
-				Password: <br><input type="text" name="password"><br>
-				Confirm Password: <br><input type="text" name="confirm"><br>
+				Full Name: <input type="text" name="name">
+				Email: <input type="text" name="email"><br>
+				Phone: <input type="text" name="phone">
+				Number of Tournaments Attended: <input type="text" name="attend"><br>
+				Number of Tournaments Judged: <input type="text" name="judged">
+				Number of Wins: <input type="text" name="wins"><br>
+				Number of Losses: <input type="text" name="loss">
+				Parent Name: <input type="text" name="parent_name"><br>
+				Parent Email: <input type="text" name="parent_email">
+				School: <input type="text" name="school"><br>
+				Username: <input type="text" name="username"><br>
+				Password: <input type="text" name="password">
+				Confirm Password: <input type="text" name="confirm"><br>
 			<div id = button>
 			<input type ="submit" value="Submit"/>
 			</div>

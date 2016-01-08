@@ -38,6 +38,9 @@ $return = array();
         } 
     ?>
     </select>
+    Would you like to hire a judge:
+    <br><input type="checkbox" name="judge_hired_option" value="Yes">Yes<br>
+    <br><input type="checkbox" name="judge_hired_option" value="No" checked>No<br><br>
     <input type="submit" value ="Submit"/>
 </form>
 <?php

@@ -9,10 +9,16 @@
 
 	$db_selected = mysql_select_db(DB_NAME, $link);
 
-
-	$coach = $_POST['coach'];
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $phone = $_POST['phone'];
+  $attend = $_POST['attend'];
+  $judged = $_POST['judged'];
+  $wins = $_POST['wins'];
+  $loss = $_POST['loss'];
+  $parent_name = $_POST['parent_name'];
+  $parent_email = $_POST['parent_email'];
 	$school = $_POST['school'];
-	$email = $_POST['email'];
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$confirm = $_POST['confirm'];
@@ -23,22 +29,24 @@
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
       }
 
-    $result = mysqli_query($con,"SELECT username,email FROM users");
+    $result = mysqli_query($con,"SELECT username,email FROM demo");
 
     if($confirm != $password){
-       echo '<script type="text/javascript">alert("your passwords dont match up");</script>';
+       echo '<script type="text/javascript">alert("your passwords dont match up try again");</script>';
+       echo '<script type="text/javascript">window.location=(\'loginexample.html\');</script>';
+
 
     }
     while($row = mysqli_fetch_array($result))
       {
      	 if ($row['username'] == $username or $row['email'] == $email) {
-          echo '<script type="text/javascript">alert("pick another username someone else has this one.");</script>';
-          break;
+          echo '<script type="text/javascript">alert("choose another username/email someone else has this one.");</script>';
+          echo '<script type="text/javascript">window.location=(\'loginexample.html\');</script>';
+          die;
      	 }
       }
-	
-  header("Location: loginexample.html");
-	$sql = "INSERT INTO users (coach, school, email, username, password, confirm) VALUES ('$coach', '$school', '$email','$username','$password','$confirm')";
+	echo '<script type="text/javascript">window.location=(\'student_login.html\');</script>';
+	$sql = "INSERT INTO demo (name, email, phone, attend, judged, wins, loss, parent_name, parent_email, school, username, password, confirm) VALUES ('$name', '$email', '$phone','$attend','$judged','$wins','$loss','$parent_name','$parent_email', '$school', '$username','$password','$confirm')";
 	if(!mysql_query($sql)){
 		die('error!');
 	}    
