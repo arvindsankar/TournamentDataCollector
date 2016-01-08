@@ -94,17 +94,16 @@
 
 
 <script language="javascript">
-				function check(form)/*function to check userid & password*/
+				function check(form)
 				{
-						/*the following code checkes whether the entered userid and password are matching*/
+						
 					if(form.userid.value == "a" && form.pswrd.value == "abc")
 					{
-						/*window.open('website.html')/*opens the target page while Id & password matches*/
 						window.location = ('website.html')
 					}
 					else
 					{
-						alert("Wrong Password!")/*displays error message*/
+						alert("Wrong Password!")
 					}
 				}
 			</script>
@@ -138,17 +137,6 @@
       			<div id="sign_up"></div>
 	  		</div>
 
-	  		<div id="login" class="tab-pane fade in active">
-				<h3> Sign In </h3>
-				<ul>
-				 <br><li><form name="login">
-					Username: <input type="text" name="userid" style="margin-top:30%;"/><br>
-					<br>Password: <input type="password" name="pswrd"/></br>
-					<br><input type="button" onclick="check(this.form)" value="Login"/></br>
-					<br><input type="reset" value="Cancel"/></br>
-				</form></li>
-				</ul>
-			</div>
 
 		</div>
 

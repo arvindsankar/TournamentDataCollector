@@ -96,17 +96,17 @@
 
 
 <script language="javascript">
-				function check(form)/*function to check userid & password*/
+				function log(form)
 				{
-						/*the following code checkes whether the entered userid and password are matching*/
-					if(form.userid.value == "a" && form.pswrd.value == "abc")
+						
+					if(form.username.value == "a" && form.password.value == "abc")
 					{
-						/*window.open('website.html')/*opens the target page while Id & password matches*/
+						
 						window.location = ('website.html')
 					}
 					else
 					{
-						alert("Wrong Password!")/*displays error message*/
+						alert("Wrong Password!")
 					}
 				}
 			</script>
@@ -121,9 +121,9 @@
 				 <br><li><form name="login">
 				 
 				 <h3> Log In </h3>
-					Username: <input type="text" name="userid" style="margin-top:15%;"/><br>
-					<br>Password: <input type="password" name="pswrd"/></br>
-					<br><input type="button" onclick="check(this.form)" value="Login"/></br>
+					Username: <input type="text" name="username" style="margin-top:15%;"/><br>
+					<br>Password: <input type="password" name="password"/></br>
+					<br><input type="button" onclick="log(this.form)" value="Login"/></br>
 					<br><input type="reset" value="Cancel"/></br>
 					
 				</form></li>
