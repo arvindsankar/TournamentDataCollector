@@ -20,13 +20,18 @@ $return = array();
 <html>
 <head>
 <title>Student Send</title>
+<style>
+    form{
+        text-align: center;
+        margin-top: 20%;
+        font-size: 20px;
+    }
+</style>
 </head>
 
 <body>
-<h1>Send Script</h1>
 <form action = "tournament_database.php" method="POST">
     Select Tournament: <select name="tournament_name">
-    <option name="blah">yolo</option>
     <?php 
         for($x=0; $x<=$i; $x++){
             echo "<option name = \"blah\">".$return[$x]."</option>";

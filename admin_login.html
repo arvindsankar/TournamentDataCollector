@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Debate Manager</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ 
+<style>
+
+	body {
+	    background-color: white;
+		background-image:url("images/Milkyway.JPG");
+	}
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	}
+
+	li {
+	    display: inline;
+	}
+
+	h1 {
+	    color: black;
+		font-size: 500%;
+
+	    margin-left: 40px;
+	}
+	h2 {
+	    color: white;
+		font-size: 400%;
+		font-weight: 900;
+	    margin-left: 40px;
+	}
+
+
+	h3{
+		color: black;
+		font-size:300%;
+		font-family: Helvetica;
+		
+	}
+
+
+	p {
+	    color: black;
+		 font-size: 300%;
+		font-weight: 600;
+	    margin-left: 60px;
+
+	}
+	.jumbotron {
+	  background-image:url("final2.JPG");
+	  height: 500px;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
+	.container{
+	  position: relative;
+	  top:10px;
+	width: 100%;
+
+	}
+	.home{
+		height: 500px;
+	}
+
+
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	}
+
+
+
+	form{
+		background: rgba(192,192,192,0.6);
+		width:450px;
+		height:400px;
+		position: fixed;
+		left:35%;
+		margin-top: 5%;
+		border-radius: 10px;
+		text-align: center;
+		
+		
+	}
+	
+</style>
+</head>
+<body>
+
+
+<script language="javascript">
+				function check(form)/*function to check userid & password*/
+				{
+						/*the following code checkes whether the entered userid and password are matching*/
+					if(form.userid.value == "a" && form.pswrd.value == "abc")
+					{
+						/*window.open('website.html')/*opens the target page while Id & password matches*/
+						window.location = ('admin_header.html')
+					}
+					else
+					{
+						alert("Wrong Password!")/*displays error message*/
+					}
+				}
+			</script>
+</body>
+
+</head>
+<body>
+
+
+	  		<div id="login" class="tab-pane fade in active">
+				<ul>
+				 <br><li><form name="login">
+				 
+				 <h3> Admin Log In </h3>
+					Username: <input type="text" name="userid" style="margin-top:15%;"/><br>
+					<br>Password: <input type="password" name="pswrd"/></br>
+					<br><input type="button" onclick="check(this.form)" value="Login"/></br>
+					<br><input type="reset" value="Cancel"/></br>
+					
+				</form></li>
+				</ul>
+			</div>
+
+			
+
+     
+
+</body>
+</html>
