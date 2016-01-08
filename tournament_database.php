@@ -17,8 +17,6 @@ $value3 = $_POST['full_name'];
 $value4 = $_POST['student_tournament_name'];
 $value5 = $_POST['judge_hired_option'];
 
-
-
 $sql ="INSERT INTO tournament_registration (tournament_name, full_name, student_tournament_name, judge_hired_option, judges_needed) VALUES ('$value1', '$value3', '$value4','$value5','$value2')";
 
 
@@ -29,8 +27,6 @@ if($sql){
 if (!mysql_query($sql)) {
 	die('Error');
 }
-
-
 header("Location: student_tournament_registration.php");
 mysql_close();
 

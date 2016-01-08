@@ -9,7 +9,7 @@
 
     <form action ="tournament_database.php" method="POST">
     Full Name: <br><input type="text" name="full_name"><br>
-    Tournament Name: <br><input type="select" name="tournament_name"><br>
+    Tournament Name: <br><input type="text" name="tournament_name"><br>
     Would you like to hire a judge:
     <br><input type="checkbox" name="judge_hired_option" value="Yes">Yes<br>
     <br><input type="checkbox" name="judge_hired_option" value="No" checked>No<br><br>
