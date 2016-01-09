@@ -94,6 +94,20 @@
 </head>
 <body>
 
+<?php
+$link= mysql_connect('localhost', 'root', 'Amit12');
+$db_selected = mysql_select_db('demo');
+echo "connection success";
+$sql_name = "SELECT name FROM demo";
+$sql_password = "SELECT password FROM demo";
+
+print_r ($sql_name);
+
+
+
+?>
+
+
 
 <script language="javascript">
 				function log(form)
